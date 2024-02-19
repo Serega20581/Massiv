@@ -177,21 +177,21 @@ console.log("Двумерный массив:");
 console.log(l);
 console.log("Количество цифр, значение которых меньше 10:", count);
 //№11
-const h = [
+const x = [
     [5, 12, 3, 8],
     [8, 20, 15, 11],
     [6, 9, 10, 14],
     [2, 7, 14, 18]
 ];
 
-let maxElement = h[0][0];
+let maxElement = x[0][0];
 let maxRowIndex = 0;
 let maxColIndex = 0;
 
-for (let i = 0; i < h.length; i++) {
-    for (let j = 0; j < h[i].length; j++) {
-        if (h[i][j] > maxElement) {
-            maxElement = h[i][j];
+for (let i = 0; i < x.length; i++) {
+    for (let j = 0; j < x[i].length; j++) {
+        if (x[i][j] > maxElement) {
+            maxElement = x[i][j];
             maxRowIndex = i;
             maxColIndex = j;
         }
@@ -199,5 +199,5 @@ for (let i = 0; i < h.length; i++) {
 }
 
 console.log("Двумерный массив:");
-console.log(h);
+console.log(x);
 console.log("Индексы максимального элемента:", [maxRowIndex, maxColIndex]);
